@@ -15,14 +15,16 @@ cmsrel CMSSW_7_4_6_patch6
 cd CMSSW_7_4_6_patch6/src/
 cmsenv
 git clone git@github.com:zhenhu/MuMuGammaAna.git
+cd MuMuGammaAna/Onia/
 scram b
 ```
 
 * Run: (use your favorite input sample)
 
 ```
-vi MuMuGammaAna/Onia/test/runMuMuGammaRootupler.py
-cmsRun MuMuGammaAna/Onia/test/runMuMuGammaRootupler.py
+cd test
+vi runMuMuGammaRootupler.py 
+cmsRun runMuMuGammaRootupler.py
 ```
 
 #CompactSkim
